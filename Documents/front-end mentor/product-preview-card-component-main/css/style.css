@@ -1,0 +1,164 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.attribution {
+      font-size: 11px;
+      text-align: center;
+  }
+
+.attribution a {
+      color: hsl(228, 45%, 44%);
+  }
+.container {
+    margin:auto;
+    margin-top: 130px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 25px 162.5px 142.5px 45px 75px;
+    width: 600px;
+    background-color: white;
+    border-radius: 12px;
+
+} 
+.item-1 > .img-1{
+    width: 300px;
+    height: 450px;
+    border-radius: 12px 0px 0px 12px;
+}
+.item-1>.img-2 {
+    display: none;
+}
+.item-2{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.3em;
+    margin: 20px
+}
+.item-3{
+    grid-column-start:2 ;
+    font-family: 'Fraunces', serif;
+    margin: 20px
+   
+}
+
+.item-4 {
+    grid-column-start: 2;
+font-family: 'Montserrat', sans-serif;
+margin: 20px
+    }
+
+.item-5 {
+    grid-column-start: 2;
+    grid-row-start: -3;
+    grid-row-end: -2;
+   
+}
+.item-6 {
+    grid-column-start: 2;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-left:20px
+}
+.child-1{
+font-family: 'Fraunces', serif;
+color: rgb(42, 109, 83);
+font-weight: bold;
+font-size: 35px;
+margin-left: 0px;
+
+}
+.child-2 {
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    position: relative;
+    bottom: 10px;
+    font-size: 15x;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    text-decoration-line: line-through;
+
+}
+.button-add{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 5px;
+    border:none;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(42, 109, 83);
+    color: white;
+    height: 40px;
+    width: 100%
+}
+.icon{
+    height: 13px;
+    width: 13px;
+    margin-right: 10px;
+
+}
+/*For laptop 1440px 90em*/
+  @media screen {
+    
+  }
+
+/*For Mobile*/
+@media only screen and (max-width: 375px) {
+.container {
+    margin: auto;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 0px 300px;
+    grid-template-rows: 210.5px 25px 162.5px 142.5px 45px 75px;
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+
+    }
+.item-1>img {
+    display: none;
+    }
+.item-1>.img-2 {
+     display: inline-block;
+ }
+ .img-2{
+    width: 300px;
+    height: 210.5px;
+    border-radius: 12px  12px 0px 0px; 
+
+ }
+ .item-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-left: 20px
+   
+ }
+ .item-3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-left: 20px
+ }
+  .item-4 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-left: 20px
+  }
+   .item-5 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    margin-left: 20px
+   }
+    .item-6 {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    margin-left: 20px
+    }
+
+}
+
